@@ -13,7 +13,7 @@ Started with Cyclus <http://fuelcycle.org/user/install.html>`_.
 
 This README provides basic information about: 
  - the dependency required by Cycamore
- - installation of Cycamore from the command line 
+ - installation of Cycamore from the command line  
  - how to run Cycamore unit tests
 
 Although Cycamore is meant to enable a basic fuel cycle simulation, you may want
