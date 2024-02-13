@@ -11,7 +11,7 @@ development of Cycamore archetypes.  If you are interested in Cyclus as a user
 or in developing your own Cyclus archetyes, you may want to consult `Getting
 Started with Cyclus <http://fuelcycle.org/user/install.html>`_.
 
-This README provides basic information about:
+This README provides basic information about: 
  - the dependency required by Cycamore
  - installation of Cycamore from the command line 
  - how to run Cycamore unit tests
