@@ -9,7 +9,7 @@ fuel cycle simulations with the Cyclus fuel cycle simulator.
 This README is intended primarily for those who intend to contribute to the
 development of Cycamore archetypes.  If you are interested in Cyclus as a user
 or in developing your own Cyclus archetyes, you may want to consult `Getting
-Started with Cyclus <http://fuelcycle.org/user/install.html>`_.
+Started with Cyclus <http://fuelcycle.org/user/install.html>`_. 
 
 This README provides basic information about: 
  - the dependency required by Cycamore
