@@ -9,6 +9,8 @@ Since last release
 
 **Changed:**
 
+* Update archetype definitions to use cyclus constants instead of arbitrary hardcoded values (#606)
+
 **Fixed:**
 
 **Removed:**
