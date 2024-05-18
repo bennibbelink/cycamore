@@ -42,8 +42,7 @@ void Storage::InitFrom(Storage* m) {
 void Storage::InitFrom(cyclus::QueryableBackend* b) {
 #pragma cyclus impl initfromdb cycamore::Storage
 
-  using cyclus::toolkit::Commodity;
-  Commodity commod = Commodity(out_commods.front());
+  cyclus::toolkit::Commodity commod = cyclus::toolkit::Commodity(out_commods.front());
   cyclus::toolkit::CommodityProducer::Add(commod);
   cyclus::toolkit::CommodityProducer::SetCapacity(commod, throughput);
 }
@@ -244,7 +243,6 @@ void Storage::Tick() {
 
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 void Storage::Tock() {
-  using cyclus::toolkit::RecordTimeSeries;
   LOG(cyclus::LEV_INFO3, "ComCnv") << prototype() << " is tocking {";
 
   BeginProcessing_();  // place unprocessed inventory into processing
@@ -318,11 +316,6 @@ void Storage::BeginProcessing_() {
 
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 void Storage::ProcessMat_(double cap) {
-  using cyclus::Material;
-  using cyclus::ResCast;
-  using cyclus::toolkit::ResBuf;
-  using cyclus::toolkit::Manifest;
-
   if (!ready.empty()) {
     try {
       double max_pop = std::min(cap, ready.quantity());
@@ -354,7 +347,6 @@ void Storage::ProcessMat_(double cap) {
 
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 void Storage::ReadyMatl_(int time) {
-  using cyclus::toolkit::ResBuf;
   LOG(cyclus::LEV_INFO5, "ComCnv") << "Placing material into ready";
 
   int to_ready = 0;

@@ -9,11 +9,14 @@ Since last release
 
 **Changed:**
 
+* Rely on ``python3`` in environment instead of ``python`` (#602)
 * Update archetype definitions to use cyclus constants instead of arbitrary hardcoded values (#606)
 
 **Fixed:**
 
 **Removed:**
+
+* Removed references to deprecated ``ResourceBuff`` class (#604)
 
 
 v1.6.0
