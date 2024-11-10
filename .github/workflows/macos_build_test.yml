@@ -62,6 +62,9 @@ jobs:
             libboost-devel \
             pytables \
             pytest
+          export CC=$CONDA_PREFIX/bin/clang
+          export CXX=$CONDA_PREFIX/bin/clang++
+          export CPP=$CONDA_PREFIX/bin/clang-cpp
           export PATH=$CONDA_PREFIX/bin:$PATH
           mkdir -p $(python3 -m site --user-site)
           python3 install.py -j 3 --allow-milps --prefix $CONDA_PREFIX
