@@ -7,12 +7,16 @@ on:
     paths-ignore:
       - '.github/workflows/publish_latest.yml'
       - '.github/workflows/publish_release.yml'
+      - '.github/workflows/macos_build_test.yml'
+      - '.github/workflows/changelog_test.yml'
       - 'doc/**'
       - 'CHANGELOG.rst'
   push:
     paths-ignore:
       - '.github/workflows/publish_latest.yml'
       - '.github/workflows/publish_release.yml'
+      - '.github/workflows/macos_build_test.yml'
+      - '.github/workflows/changelog_test.yml'
       - 'doc/**'
       - 'CHANGELOG.rst'
 
